@@ -149,6 +149,7 @@ public class JarInstrumentor {
     Builder builder =
         InstrumentationConfiguration.newBuilder()
             .doNotAcquirePackage("java.")
+            .doNotAcquirePackage("jdk.internal.")
             .doNotAcquirePackage("sun.")
             .doNotAcquirePackage("org.robolectric.annotation.")
             .doNotAcquirePackage("org.robolectric.internal.")

@@ -66,6 +66,7 @@ public class AndroidConfigurer {
 
     builder
         .doNotAcquirePackage("javax.")
+        .doNotAcquirePackage("jdk.internal.")
         .doNotAcquirePackage("org.junit")
         .doNotAcquirePackage("org.hamcrest")
         .doNotAcquirePackage("org.robolectric.annotation.")

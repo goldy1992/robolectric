@@ -146,6 +146,7 @@ public class SandboxTestRunner extends BlockJUnit4ClassRunner {
   protected InstrumentationConfiguration createClassLoaderConfig(FrameworkMethod method) {
     InstrumentationConfiguration.Builder builder = InstrumentationConfiguration.newBuilder()
         .doNotAcquirePackage("java.")
+        .doNotAcquirePackage("jdk.internal.")
         .doNotAcquirePackage("sun.")
         .doNotAcquirePackage("org.robolectric.annotation.")
         .doNotAcquirePackage("org.robolectric.internal.")
